@@ -1,13 +1,7 @@
 import storage from "./util/storage.js"
 const init = {
     //Lấy ra dữ liệu từ local storage đã được lưu
-    todos: [{
-        title: "123",
-        isCompleted: true
-    }, {
-        title: "123",
-        isCompleted: false
-    }],
+    todos: storage.get(),
     editIndex: null,
     filter: 'All',
     filters: {
